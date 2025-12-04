@@ -8,9 +8,9 @@ Use this short checklist to get clear, useful help from the built-in AI assistan
 - Prefer text over screenshots; if you must share an image, add a 1–2 line description.
 
 **Need the 60-second version?**
-1. Say the goal in one sentence and mention you’re on mobile if true.
+1. Say the goal in one short sentence and mention you’re on mobile if true.
 2. Paste the exact command, file path, and error text (copy/paste beats screenshots).
-3. Ask for one action plus the command to rerun; request the command be repeated near the fix so you don’t scroll.
+3. Ask for one action plus the command to rerun; request the command be repeated next to the fix so you don’t scroll.
 
 ## 1) Say the goal first
 - In one sentence, state what you want to build, fix, or learn.
@@ -64,6 +64,15 @@ Constraints: I’m on my phone; please keep steps short. No changes to API route
 Current info: `pnpm test sidebar` fails with "Cannot read property 'open' of undefined" in app/sidebar.tsx line 42.
 Preferences: Use existing Tailwind classes; brief explanation only. Include the exact test command to rerun.
 Finish line: Patch + test command I can run from Terminal, plus a one-line summary of what changed.
+```
+
+### 60-second checklist in action (phone example)
+```
+Goal: Stop `pnpm lint` from failing while I’m on my phone.
+Constraints: Short replies only; repeat the rerun command near each fix.
+Current info: `pnpm lint` shows "Unexpected any" in app/api/translate.ts line 27 and "Unused import Button" in components/Nav.tsx line 12.
+Preferences: Share paste-ready code snippets; no screenshots. Keep each fix under 4 lines.
+Finish line: Code edits I can paste plus the exact lint command to rerun.
 ```
 
 ### Example for quick mobile help
