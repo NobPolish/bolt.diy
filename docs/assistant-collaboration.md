@@ -3,9 +3,9 @@
 Use this short checklist to get clear, useful help from the built-in AI assistant—no IDE required. It works from a phone, tablet, or any browser tab.
 
 **If you’re on mobile or a tablet:**
-- Flag it early so replies stay short.
+- Say you’re on mobile so replies stay short.
 - Ask for copy/paste-ready snippets with minimal scrolling and tap-by-tap steps.
-- Prefer text over screenshots; if you must share an image, add 1–2 lines of plain text that describe the issue.
+- Prefer text over screenshots; if you must share an image, add a 1–2 line description.
 
 ## 1) Say the goal first
 - In one sentence, state what you want to build, fix, or learn.
@@ -15,8 +15,8 @@ Use this short checklist to get clear, useful help from the built-in AI assistan
 
 ## 2) Share exactly what you see
 - Paste logs, errors, or command output directly; avoid summaries like "it broke." Copy/paste beats screenshots whenever possible.
-- Include the exact command and the file path that produced the issue so the assistant can reproduce it.
-- On small screens, send shorter snippets in separate messages if needed—long screenshots are harder to read and quote back.
+- Include the exact command and file path that produced the issue so the assistant can reproduce it.
+- On small screens, send shorter snippets in separate messages—long screenshots are harder to read and quote back.
 - Handy project commands:
   - `pnpm dev` – run the app locally.
   - `pnpm test` – run unit tests (Vitest).
@@ -25,7 +25,7 @@ Use this short checklist to get clear, useful help from the built-in AI assistan
 
 ## 3) Ask for one move at a time
 - Request a single clear action (e.g., "fix this error" or "add a test for X").
-- If you’re on a small screen, ask for short, copy/paste steps. Request the assistant to repeat commands near where they’re used so you don’t have to scroll.
+- If you’re on a small screen, ask for short, copy/paste steps. Ask to repeat commands near where they’re used so you don’t have to scroll.
 - After the response, ask for a quick recap if you want confirmation before continuing.
 
 ## 4) State your preferences
