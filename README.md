@@ -6,6 +6,8 @@ Welcome to Bolt.diy, the official open source version of Bolt.new (previously kn
 
 Check the [Bolt.diy Docs](https://stackblitz-labs.github.io/bolt.diy/) for more information. This documentation is still being updated after the transfer.
 
+For guidance on collaborating with the built-in AI assistant on this project, see [`docs/assistant-collaboration.md`](./docs/assistant-collaboration.md).
+
 Bolt.diy was originally started by [Cole Medin](https://www.youtube.com/@ColeMedin) but has quickly grown into a massive community effort to build the BEST open source AI coding assistant!
 
 ## Join the community for Bolt.diy!
