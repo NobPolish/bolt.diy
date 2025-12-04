@@ -88,3 +88,16 @@ Finish line: <code snippet/steps + command to rerun>
 ```
 
 Using this checklist keeps the conversation fast, focused, and ready for immediate action without needing an IDE.
+
+---
+
+## Private-use readiness and hosting steps
+- The checklist above is already deployment-ready for private use—no extra approvals or publishing steps are required.
+- For a private run in this repo:
+  1. Copy `.env.example` to `.env.local` and add only the model API keys you plan to use.
+  2. Install dependencies: `pnpm install`.
+  3. Start locally: `pnpm dev` (or `pnpm build && pnpm preview` for a production build).
+- To self-host privately with Docker from this project directory:
+  1. Build the image: `docker build . --target bolt-ai-production -t bolt-diy:latest`.
+  2. Run it: `docker run -p 4173:4173 --env-file .env.local bolt-diy:latest`.
+- Keep your `.env.local` out of version control; it’s already in `.gitignore`.
