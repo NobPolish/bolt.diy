@@ -101,3 +101,16 @@ Using this checklist keeps the conversation fast, focused, and ready for immedia
   1. Build the image: `docker build . --target bolt-ai-production -t bolt-diy:latest`.
   2. Run it: `docker run -p 4173:4173 --env-file .env.local bolt-diy:latest`.
 - Keep your `.env.local` out of version control; it’s already in `.gitignore`.
+
+### Fresh `.env.local` quickstart (end-to-end)
+Use this if you want to verify a private run from scratch on your own machine:
+
+1. **Copy and fill env:** `cp .env.example .env.local`, then open `.env.local` and add the API keys you plan to use.
+2. **Install once:** `pnpm install` (creates `node_modules/`).
+3. **Start dev server:** `pnpm dev`.
+   - The dev server prints the local URL (defaults to `http://localhost:4173`).
+   - If a port is busy, stop the other process or set `PORT=<free-port> pnpm dev`.
+4. **Visit the app:** open the printed URL in your browser. For mobile testing, use the same LAN IP/port from your phone.
+5. **Stop when done:** press `Ctrl+C` in the terminal. Your `.env.local` and `node_modules/` stay for the next run.
+
+If you want a production-style check without Docker: run `pnpm build && pnpm preview`, then open the preview URL the same way.
