@@ -7,6 +7,11 @@ Use this short checklist to get clear, useful help from the built-in AI assistan
 - Ask for copy/paste-ready snippets with minimal scrolling and tap-by-tap steps.
 - Prefer text over screenshots; if you must share an image, add a 1–2 line description.
 
+**Need the 60-second version?**
+1. Say the goal in one sentence and mention you’re on mobile if true.
+2. Paste the exact command, file path, and error text (copy/paste beats screenshots).
+3. Ask for one action plus the command to rerun; request the command be repeated near the fix so you don’t scroll.
+
 ## 1) Say the goal first
 - In one sentence, state what you want to build, fix, or learn.
 - Add limits up front: deadlines, files to avoid, preferred tools, or privacy/security rules.
@@ -97,6 +102,7 @@ Using this checklist keeps the conversation fast, focused, and ready for immedia
   1. Copy `.env.example` to `.env.local` and add only the model API keys you plan to use.
   2. Install dependencies: `pnpm install`.
   3. Start locally: `pnpm dev` (or `pnpm build && pnpm preview` for a production build).
+  4. Confirm the server prints the URL (default `http://localhost:4173`) and opens in your browser.
 - To self-host privately with Docker from this project directory:
   1. Build the image: `docker build . --target bolt-ai-production -t bolt-diy:latest`.
   2. Run it: `docker run -p 4173:4173 --env-file .env.local bolt-diy:latest`.
